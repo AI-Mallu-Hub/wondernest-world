@@ -1,0 +1,44 @@
+/* ==========================================================
+   WonderNest
+   The Sprout
+   First Morning Light
+   ========================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+
+    font-family: "Segoe UI", sans-serif;
+
+    background: linear-gradient(
+        to bottom,
+        #87CEEB 0%,
+        #BFEFFF 40%,
+        #EAF9D8 75%,
+        #CBEF9A 100%
+    );
+
+    color: #2F4F2F;
+}
+
+#wondernest {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
