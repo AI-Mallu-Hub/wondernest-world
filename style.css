@@ -42,3 +42,83 @@ body {
 
     position: relative;
 }
+
+/* =========================
+   Scene Layers
+========================= */
+
+.sky,
+.hills,
+.forest,
+.ground,
+.cottage,
+.flowers{
+    position:absolute;
+    left:0;
+    width:100%;
+}
+
+/* Sky */
+
+.sky{
+    top:0;
+    height:60%;
+    background:linear-gradient(
+        to bottom,
+        #8ed8ff 0%,
+        #d9f5ff 100%
+    );
+}
+
+/* Hills */
+
+.hills{
+    top:35%;
+    height:20%;
+    background:#9fbfa8;
+    clip-path:polygon(
+        0% 100%,
+        10% 60%,
+        22% 75%,
+        38% 45%,
+        52% 70%,
+        68% 40%,
+        82% 65%,
+        100% 100%
+    );
+}
+
+/* Forest */
+
+.forest{
+    top:48%;
+    height:12%;
+    background:#3f6d43;
+}
+
+/* Ground */
+
+.ground{
+    bottom:0;
+    height:40%;
+    background:#87c76a;
+}
+
+/* Cottage */
+
+.cottage{
+    bottom:28%;
+    left:50%;
+    transform:translateX(-50%);
+    width:120px;
+    height:90px;
+    background:#9c6b3d;
+    border-radius:6px;
+}
+
+/* Flowers */
+
+.flowers{
+    bottom:18%;
+    height:10%;
+}
