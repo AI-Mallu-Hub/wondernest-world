@@ -63,18 +63,21 @@ body {
 .sky{
     top:0;
     height:60%;
+
     background:linear-gradient(
         to bottom,
-        #8ed8ff 0%,
-        #d9f5ff 100%
+        #82d6ff 0%,
+        #b9ecff 55%,
+        #eefcff 100%
     );
 }
 
 /* Hills */
 
 .hills{
-    top:35%;
-    height:20%;
+    top:34%;
+    height:22%;
+    opacity:0.75;
     background:#9fbfa8;
     clip-path:polygon(
         0% 100%,
@@ -91,9 +94,13 @@ body {
 /* Forest */
 
 .forest{
-    top:48%;
-    height:12%;
-    background:#3f6d43;
+    top:49%;
+    height:11%;
+    background:linear-gradient(
+        to bottom,
+        #4d7d4c,
+        #2f5e34
+    );
 }
 
 /* Ground */
@@ -101,8 +108,12 @@ body {
 .ground{
     bottom:0;
     height:40%;
-    background:#87c76a;
-}
+    background:linear-gradient(
+        to bottom,
+        #8fd16c,
+        #7bc15f
+    );
+   }
 
 /* Cottage */
 
