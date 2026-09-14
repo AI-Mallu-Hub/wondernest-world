@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1600" height="1000" viewBox="0 0 1600 1000"
+     data-wondernest-asset="world-terrain"
+     data-wondernest-status="session-3.1">
+  <defs>
+    <linearGradient id="terrain-base-gradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#78965a"/>
+      <stop offset="100%" stop-color="#536d43"/>
+    </linearGradient>
+    <linearGradient id="terrain-foreground-gradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8ca968"/>
+      <stop offset="100%" stop-color="#607d4c"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Phase 3.1: world terrain foundation only.
+       No Mother Tree artwork is embedded or modified here. -->
+  <g id="g-world-terrain" class="wn-world-layer"
+     data-session="3.1" data-scope="terrain-foundation-only">
+
+    <!-- Main world land mass -->
+    <path id="world-terrain-base" class="wn-terrain-base"
+          d="M 0 470
+             C 120 445 225 455 330 472
+             C 455 492 555 470 675 452
+             C 805 433 905 455 1015 468
+             C 1145 484 1245 455 1370 447
+             C 1465 441 1545 449 1600 462
+             L 1600 1000 L 0 1000 Z"
+          fill="url(#terrain-base-gradient)"/>
+
+    <!-- Gentle midground contour -->
+    <path id="world-terrain-midground" class="wn-terrain-midground"
+          d="M 0 610
+             C 145 570 275 585 405 610
+             C 535 636 650 600 780 580
+             C 915 558 1030 590 1160 610
+             C 1295 632 1450 588 1600 600
+             L 1600 1000 L 0 1000 Z"
+          fill="url(#terrain-foreground-gradient)"
+          opacity="0.82"/>
+
+    <!-- Foreground organic rise -->
+    <path id="world-terrain-foreground" class="wn-terrain-foreground"
+          d="M 0 770
+             C 135 730 255 748 385 780
+             C 520 814 625 772 760 750
+             C 900 727 1020 770 1150 792
+             C 1295 816 1440 770 1600 785
+             L 1600 1000 L 0 1000 Z"
+          fill="#5f7d4c"
+          opacity="0.9"/>
+
+    <!-- Soft open-area clearing, kept subtle for later object placement -->
+    <path id="world-terrain-clearing" class="wn-terrain-clearing"
+          d="M 255 650
+             C 390 610 520 625 635 660
+             C 760 698 855 690 965 655
+             C 1085 617 1200 625 1335 665
+             C 1260 735 1160 760 1040 752
+             C 910 744 815 720 690 738
+             C 545 760 390 742 255 650 Z"
+          fill="#78985c"
+          opacity="0.34"/>
+
+    <!-- Small contour accents -->
+    <path id="world-terrain-contour-01" class="wn-terrain-detail"
+          d="M 90 690 C 210 660 305 670 395 692"
+          fill="none" stroke="#49633c" stroke-width="9"
+          stroke-linecap="round" opacity="0.34"/>
+    <path id="world-terrain-contour-02" class="wn-terrain-detail"
+          d="M 1180 705 C 1300 680 1420 685 1520 710"
+          fill="none" stroke="#49633c" stroke-width="9"
+          stroke-linecap="round" opacity="0.34"/>
+  </g>
+</svg>

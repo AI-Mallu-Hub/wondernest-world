@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <title>WonderNest Magical FX System Standalone v1.0</title>
+  <desc>Reusable magical effects library for WonderNest scenes.</desc>
+  <defs>
+    <radialGradient id="glow-soft" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF7C7" stop-opacity="0.72"/>
+      <stop offset="55%" stop-color="#DDF7C8" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#DDF7C8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-ground" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F7EFA7" stop-opacity="0.42"/>
+      <stop offset="65%" stop-color="#CBE7B4" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#CBE7B4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <g id="g-magical-fx-system">
+
+    <g id="g-floating-motes">
+      <circle id="mote-01" cx="120" cy="120" r="7" fill="#F8F1B5" opacity="0.72"/>
+      <circle id="mote-02" cx="210" cy="190" r="4" fill="#DFF3C4" opacity="0.64"/>
+      <circle id="mote-03" cx="320" cy="110" r="9" fill="#FFF3B0" opacity="0.58"/>
+      <circle id="mote-04" cx="440" cy="230" r="5" fill="#E4F6D1" opacity="0.72"/>
+      <circle id="mote-05" cx="570" cy="145" r="3" fill="#FFF8CF" opacity="0.78"/>
+      <circle id="mote-06" cx="690" cy="265" r="8" fill="#D9F0C1" opacity="0.58"/>
+      <circle id="mote-07" cx="830" cy="135" r="5" fill="#FFF1A8" opacity="0.68"/>
+      <circle id="mote-08" cx="970" cy="215" r="10" fill="#E5F5C9" opacity="0.48"/>
+      <circle id="mote-09" cx="1110" cy="125" r="4" fill="#FFF5BA" opacity="0.72"/>
+      <circle id="mote-10" cx="1250" cy="260" r="6" fill="#DDF2C6" opacity="0.62"/>
+      <circle id="mote-11" cx="1390" cy="150" r="3" fill="#FFF8D5" opacity="0.8"/>
+      <circle id="mote-12" cx="1490" cy="300" r="8" fill="#E0F4C8" opacity="0.5"/>
+    </g>
+
+    <g id="g-sparkles" fill="#FFF5B8">
+      <g id="sparkle-01" opacity="0.78">
+        <path d="M170 390 L176 410 L196 416 L176 422 L170 442 L164 422 L144 416 L164 410 Z"/>
+      </g>
+      <g id="sparkle-02" opacity="0.62">
+        <path d="M410 520 L415 536 L431 541 L415 546 L410 562 L405 546 L389 541 L405 536 Z"/>
+      </g>
+      <g id="sparkle-03" opacity="0.72">
+        <path d="M710 390 L718 414 L742 422 L718 430 L710 454 L702 430 L678 422 L702 414 Z"/>
+      </g>
+      <g id="sparkle-04" opacity="0.58">
+        <path d="M1030 510 L1035 526 L1051 531 L1035 536 L1030 552 L1025 536 L1009 531 L1025 526 Z"/>
+      </g>
+      <g id="sparkle-05" opacity="0.75">
+        <path d="M1330 410 L1337 431 L1358 438 L1337 445 L1330 466 L1323 445 L1302 438 L1323 431 Z"/>
+      </g>
+      <g id="sparkle-06" opacity="0.5">
+        <path d="M1510 590 L1515 605 L1530 610 L1515 615 L1510 630 L1505 615 L1490 610 L1505 605 Z"/>
+      </g>
+    </g>
+
+    <g id="g-soft-glows">
+      <ellipse id="glow-01" cx="270" cy="650" rx="62" ry="48" fill="url(#glow-soft)"/>
+      <ellipse id="glow-02" cx="560" cy="710" rx="45" ry="35" fill="url(#glow-soft)"/>
+      <ellipse id="glow-03" cx="880" cy="620" rx="70" ry="52" fill="url(#glow-soft)"/>
+      <ellipse id="glow-04" cx="1190" cy="690" rx="52" ry="40" fill="url(#glow-soft)"/>
+      <ellipse id="glow-05" cx="1450" cy="610" rx="38" ry="30" fill="url(#glow-soft)"/>
+    </g>
+
+    <g id="g-magic-trails" fill="none" stroke-linecap="round">
+      <g id="trail-01" opacity="0.52">
+        <path d="M250 330 C290 280 350 290 375 335 C397 375 365 408 330 398" stroke="#DCEFC3" stroke-width="7"/>
+        <circle cx="250" cy="330" r="5" fill="#FFF2AD"/>
+        <circle cx="375" cy="335" r="4" fill="#FFF7C9"/>
+        <circle cx="330" cy="398" r="3" fill="#E6F6D0"/>
+      </g>
+      <g id="trail-02" opacity="0.48">
+        <path d="M760 690 C810 645 875 655 900 700 C922 740 895 775 855 770" stroke="#E0F2C8" stroke-width="6"/>
+        <circle cx="760" cy="690" r="4" fill="#FFF5B7"/>
+        <circle cx="900" cy="700" r="4" fill="#FFF9D2"/>
+        <circle cx="855" cy="770" r="3" fill="#E0F4C8"/>
+      </g>
+      <g id="trail-03" opacity="0.44">
+        <path d="M1170 330 C1210 300 1260 315 1285 350 C1305 378 1290 410 1258 418" stroke="#D7EFC0" stroke-width="5"/>
+        <circle cx="1170" cy="330" r="3" fill="#FFF5B7"/>
+        <circle cx="1285" cy="350" r="4" fill="#FFF9D0"/>
+        <circle cx="1258" cy="418" r="3" fill="#E1F5C9"/>
+      </g>
+    </g>
+
+    <g id="g-ground-glows">
+      <ellipse id="ground-glow-01" cx="350" cy="850" rx="115" ry="30" fill="url(#glow-ground)"/>
+      <ellipse id="ground-glow-02" cx="650" cy="880" rx="90" ry="25" fill="url(#glow-ground)"/>
+      <ellipse id="ground-glow-03" cx="980" cy="835" rx="125" ry="32" fill="url(#glow-ground)"/>
+      <ellipse id="ground-glow-04" cx="1300" cy="875" rx="95" ry="27" fill="url(#glow-ground)"/>
+    </g>
+
+    <g id="g-rare-highlights">
+      <g id="rare-highlight-01" opacity="0.8">
+        <circle cx="520" cy="300" r="24" fill="url(#glow-soft)"/>
+        <path d="M520 266 L527 293 L554 300 L527 307 L520 334 L513 307 L486 300 L513 293 Z" fill="#FFF4B1"/>
+        <circle cx="570" cy="335" r="5" fill="#E1F5C8"/>
+      </g>
+      <g id="rare-highlight-02" opacity="0.72">
+        <circle cx="1080" cy="430" r="28" fill="url(#glow-soft)"/>
+        <path d="M1080 391 L1088 422 L1119 430 L1088 438 L1080 469 L1072 438 L1041 430 L1072 422 Z" fill="#FFF6B9"/>
+        <circle cx="1130" cy="470" r="5" fill="#DDF3C5"/>
+      </g>
+    </g>
+
+  </g>
+</svg>

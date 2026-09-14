@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <title>WonderNest Atmosphere &amp; Lighting System Standalone v1.0</title>
+  <desc>Reusable natural forest atmosphere and lighting library for WonderNest scenes.</desc>
+
+  <defs>
+    <linearGradient id="soft-light-wash" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF5CF" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#FFF5CF" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="ground-light" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#FFF3C5" stop-opacity="0.34"/>
+      <stop offset="65%" stop-color="#F4E9B5" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#F4E9B5" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="canopy-light" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF6D0" stop-opacity="0.25"/>
+      <stop offset="0.55" stop-color="#F6EFC5" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#F6EFC5" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="mist" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E9F0E2" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#E9F0E2" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#E9F0E2" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <g id="g-atmosphere-lighting-system">
+
+    <g id="g-soft-light-washes">
+      <path id="soft-wash-01" d="M0 0 H520 L760 650 H0 Z" fill="url(#soft-light-wash)"/>
+      <path id="soft-wash-02" d="M1080 0 H1600 V610 L1320 690 Z" fill="url(#soft-light-wash)" opacity="0.72"/>
+      <ellipse id="soft-wash-03" cx="800" cy="430" rx="570" ry="260" fill="#FFF7D5" opacity="0.055"/>
+    </g>
+
+    <g id="g-canopy-light">
+      <path id="canopy-light-01" d="M170 0 L390 0 L650 500 L560 540 Z" fill="url(#canopy-light)"/>
+      <path id="canopy-light-02" d="M590 0 L730 0 L870 520 L810 550 Z" fill="url(#canopy-light)" opacity="0.72"/>
+      <path id="canopy-light-03" d="M1010 0 L1160 0 L1030 510 L950 540 Z" fill="url(#canopy-light)" opacity="0.64"/>
+      <path id="canopy-light-04" d="M1300 0 L1450 0 L1250 500 L1170 530 Z" fill="url(#canopy-light)" opacity="0.55"/>
+    </g>
+
+    <g id="g-ground-light">
+      <ellipse id="ground-light-01" cx="250" cy="790" rx="170" ry="58" fill="url(#ground-light)"/>
+      <ellipse id="ground-light-02" cx="520" cy="865" rx="125" ry="44" fill="url(#ground-light)"/>
+      <ellipse id="ground-light-03" cx="830" cy="760" rx="190" ry="65" fill="url(#ground-light)"/>
+      <ellipse id="ground-light-04" cx="1120" cy="870" rx="145" ry="50" fill="url(#ground-light)"/>
+      <ellipse id="ground-light-05" cx="1420" cy="760" rx="120" ry="42" fill="url(#ground-light)"/>
+    </g>
+
+    <g id="g-light-rays" fill="none" stroke="#FFF4CC" stroke-linecap="round">
+      <path id="light-ray-01" d="M315 25 L535 525" stroke-width="34" opacity="0.075"/>
+      <path id="light-ray-02" d="M690 10 L815 505" stroke-width="24" opacity="0.06"/>
+      <path id="light-ray-03" d="M1110 15 L1010 500" stroke-width="30" opacity="0.055"/>
+      <path id="light-ray-04" d="M1390 30 L1210 510" stroke-width="22" opacity="0.05"/>
+    </g>
+
+    <g id="g-mist-haze">
+      <ellipse id="mist-01" cx="300" cy="590" rx="300" ry="72" fill="url(#mist)"/>
+      <ellipse id="mist-02" cx="850" cy="650" rx="420" ry="82" fill="url(#mist)" opacity="0.78"/>
+      <ellipse id="mist-03" cx="1320" cy="585" rx="330" ry="68" fill="url(#mist)" opacity="0.62"/>
+      <path id="mist-ribbon-01" d="M0 700 C250 645 420 730 650 680 C890 628 1080 720 1300 675 C1430 648 1520 670 1600 690 L1600 760 C1380 730 1210 760 1010 745 C790 728 590 770 390 748 C220 729 100 745 0 770 Z" fill="#E8EFE2" opacity="0.055"/>
+    </g>
+
+    <g id="g-atmosphere-particles">
+      <circle id="particle-01" cx="155" cy="510" r="3" fill="#F3EBC8" opacity="0.38"/>
+      <circle id="particle-02" cx="280" cy="455" r="2" fill="#EEF0D7" opacity="0.42"/>
+      <circle id="particle-03" cx="405" cy="610" r="4" fill="#F6EDC7" opacity="0.28"/>
+      <circle id="particle-04" cx="540" cy="430" r="2" fill="#EEF1D9" opacity="0.48"/>
+      <circle id="particle-05" cx="680" cy="575" r="3" fill="#F4EFCF" opacity="0.34"/>
+      <circle id="particle-06" cx="795" cy="480" r="2" fill="#EEF0D8" opacity="0.45"/>
+      <circle id="particle-07" cx="930" cy="600" r="4" fill="#F3ECCB" opacity="0.30"/>
+      <circle id="particle-08" cx="1060" cy="455" r="2" fill="#EEF1D8" opacity="0.43"/>
+      <circle id="particle-09" cx="1190" cy="575" r="3" fill="#F5EFCB" opacity="0.32"/>
+      <circle id="particle-10" cx="1325" cy="465" r="2" fill="#EEF1D8" opacity="0.46"/>
+      <circle id="particle-11" cx="1460" cy="610" r="4" fill="#F4EDC9" opacity="0.27"/>
+      <circle id="particle-12" cx="1515" cy="480" r="2" fill="#EEF0D7" opacity="0.4"/>
+    </g>
+
+  </g>
+</svg>
